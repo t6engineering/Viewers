@@ -298,6 +298,7 @@ export function ViewportGridProvider({ children, service }) {
         setDisplaySetsForViewports,
         setLayout,
         reset,
+        onModeExit: reset,
         setCachedLayout,
         restoreCachedLayout,
         set,
