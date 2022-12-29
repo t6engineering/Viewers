@@ -9654,6 +9654,10 @@ didyoumean@^1.2.2:
   resolved "https://registry.npmjs.org/didyoumean/-/didyoumean-1.2.2.tgz#989346ffe9e839b4555ecf5666edea0d3e8ad037"
   integrity sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==
 
+"dicomweb-client@git+https://github.com/t6engineering/dicomweb-client.git#20b921eb6bd6451d9cc711f2fb0dc18e591700d4":
+  version "0.5.2"
+  resolved "git+https://github.com/t6engineering/dicomweb-client.git#20b921eb6bd6451d9cc711f2fb0dc18e591700d4"
+
 diff-sequences@^24.9.0:
   version "24.9.0"
   resolved "https://registry.npmjs.org/diff-sequences/-/diff-sequences-24.9.0.tgz#5715d6244e2aa65f48bba0bc972db0b0b11e95b5"

@@ -31,7 +31,6 @@ module.exports = (env, argv) => {
       path: ROOT_DIR,
       library: 'OHIFExtDICOMSR',
       libraryTarget: 'umd',
-      libraryExport: 'default',
       filename: pkg.main,
     },
     plugins: [
