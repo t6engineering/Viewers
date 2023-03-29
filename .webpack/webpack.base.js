@@ -22,13 +22,13 @@ const cssToJavaScript = require('./rules/cssToJavaScript.js');
 
 // ~~ ENV VARS
 const NODE_ENV = process.env.NODE_ENV;
-const QUICK_BUILD = process.env.QUICK_BUILD;
+const QUICK_BUILD = 'true';
 const BUILD_NUM = process.env.CIRCLE_BUILD_NUM || '0';
 
 //
 dotenv.config();
 
-module.exports = (env, argv, { SRC_DIR, DIST_DIR }) => {
+module.exports = (env, argv, { SRC_DIR, DIST_DIR, ENTRY }) => {
   if (!process.env.NODE_ENV) {
     throw new Error('process.env.NODE_ENV not set');
   }
@@ -41,7 +41,7 @@ module.exports = (env, argv, { SRC_DIR, DIST_DIR }) => {
     mode: isProdBuild ? 'production' : 'development',
     devtool: isProdBuild ? 'source-map' : 'cheap-module-source-map',
     entry: {
-      app: `${SRC_DIR}/index.js`,
+      app: `${SRC_DIR}/${ENTRY || 'index.js'}`,
     },
     optimization: {
       // splitChunks: {

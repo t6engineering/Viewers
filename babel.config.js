@@ -12,6 +12,8 @@ module.exports = {
     '@babel/plugin-transform-typescript',
     ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
     ['@babel/plugin-proposal-private-methods', { loose: true }],
+    '@babel/plugin-proposal-nullish-coalescing-operator',
+    '@babel/plugin-proposal-optional-chaining',
   ],
   env: {
     test: {

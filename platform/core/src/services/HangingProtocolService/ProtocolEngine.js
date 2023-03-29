@@ -1,4 +1,4 @@
-import { HPMatcher } from './HPMatcher.js';
+import { HPMatcher } from './HPMatcher.ts';
 import { sortByScore } from './lib/sortByScore';
 
 export default class ProtocolEngine {

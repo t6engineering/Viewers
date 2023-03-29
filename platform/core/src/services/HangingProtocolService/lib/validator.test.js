@@ -1,4 +1,4 @@
-import validate from './validator.js';
+import validate from './validator.ts';
 
 describe('validator', () => {
   const attributeMap = {
